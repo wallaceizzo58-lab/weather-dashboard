@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Dashboard - Previsão do Tempo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🌤️ Weather Dashboard</h1>
+      <p>Previsão do tempo em tempo real</p>
+    </header>
+
+    <div class="search-box">
+      <input 
+        type="text" 
+        id="searchInput" 
+        placeholder="Digite uma cidade (ex: São Paulo, Rio de Janeiro)..."
+        autocomplete="off"
+      >
+      <button id="searchBtn">Buscar</button>
+    </div>
+
+    <div id="loading" class="loading" style="display: none;">
+      <span></span>
+      <p>Carregando dados...</p>
+    </div>
+
+    <div id="error" class="error" style="display: none;"></div>
+
+    <div id="weatherContainer" class="weather-container">
+      <!-- Conteúdo será inserido aqui via JavaScript -->
+    </div>
+
+    <div id="forecastContainer" class="forecast-container">
+      <!-- Previsão dos próximos dias será inserida aqui -->
+    </div>
+
+    <footer>
+      <p>Dados fornecidos por Open-Meteo API | © 2026 Weather Dashboard</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
